@@ -1,0 +1,7 @@
+relationship b7244599-0e77-c272-74fb-5997b79c257e
+	fromColumn: Suburbs.city
+	toColumn: Cities.city
+
+relationship 884b96d0-a7e9-c5f5-9e73-49d6f693add1
+	fromColumn: Curve.city
+	toColumn: Cities.city

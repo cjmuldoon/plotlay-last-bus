@@ -1,0 +1,377 @@
+{
+ "date_weekday": "2026-11-25",
+ "date_sunday": "2026-11-29",
+ "radius_m": 400,
+ "cities": {
+  "Adelaide": {
+   "residents": 1386882,
+   "mesh_blocks": 15797,
+   "feed": "Adelaide Metro",
+   "stops": 7181,
+   "routes": 348,
+   "school_routes_left_out": 170,
+   "no_stop_pct": 13.9,
+   "bus_after_19_pct": 80.0,
+   "bus_after_20_pct": 74.6,
+   "bus_after_21_pct": 73.6,
+   "bus_after_22_pct": 71.2,
+   "bus_after_23_pct": 62.2,
+   "bus_after_24_pct": 32.6,
+   "sunday_bus_after_19_pct": 72.7,
+   "sunday_bus_after_21_pct": 71.0,
+   "sunday_bus_after_23_pct": 62.1,
+   "any_mode_after_21_pct": 75.8,
+   "any_mode_after_23_pct": 65.1,
+   "stops_none_after_21_pct": 30.8,
+   "stops_none_after_22_pct": 35.9,
+   "last_bus_9_to_10_pm": 32476,
+   "last_bus_9_to_10_pm_pct": 2.3,
+   "sunday_stops": 5934,
+   "sunday_routes": 187,
+   "suburbs": 494,
+   "quiet_first": [
+    {
+     "suburb": "Hillbank",
+     "residents": 5017.0,
+     "stop_400m_pct": 84.0,
+     "wd_bus_after_21_pct": 26.1,
+     "wd_quiet": "19:28"
+    },
+    {
+     "suburb": "Happy Valley",
+     "residents": 11411.0,
+     "stop_400m_pct": 97.3,
+     "wd_bus_after_21_pct": 43.4,
+     "wd_quiet": "20:11"
+    },
+    {
+     "suburb": "Aberfoyle Park",
+     "residents": 11226.0,
+     "stop_400m_pct": 89.8,
+     "wd_bus_after_21_pct": 55.7,
+     "wd_quiet": "21:39"
+    },
+    {
+     "suburb": "Craigmore",
+     "residents": 10920.0,
+     "stop_400m_pct": 82.0,
+     "wd_bus_after_21_pct": 79.4,
+     "wd_quiet": "22:11"
+    },
+    {
+     "suburb": "Aldinga Beach",
+     "residents": 10682.0,
+     "stop_400m_pct": 97.1,
+     "wd_bus_after_21_pct": 96.2,
+     "wd_quiet": "22:19"
+    }
+   ],
+   "quiet_last": [
+    {
+     "suburb": "Henley Beach",
+     "residents": 6223.0,
+     "wd_quiet": "00:42"
+    },
+    {
+     "suburb": "Grange",
+     "residents": 6134.0,
+     "wd_quiet": "00:41"
+    },
+    {
+     "suburb": "Christies Beach",
+     "residents": 5968.0,
+     "wd_quiet": "00:38"
+    },
+    {
+     "suburb": "Christie Downs",
+     "residents": 5218.0,
+     "wd_quiet": "00:38"
+    },
+    {
+     "suburb": "Modbury Heights",
+     "residents": 6963.0,
+     "wd_quiet": "00:37"
+    }
+   ]
+  },
+  "Melbourne": {
+   "residents": 4917585,
+   "mesh_blocks": 49586,
+   "feed": "Transport Victoria",
+   "stops": 19144,
+   "routes": 575,
+   "school_routes_left_out": 0,
+   "no_stop_pct": 18.9,
+   "bus_after_19_pct": 78.2,
+   "bus_after_20_pct": 75.0,
+   "bus_after_21_pct": 73.0,
+   "bus_after_22_pct": 47.9,
+   "bus_after_23_pct": 26.4,
+   "bus_after_24_pct": 18.4,
+   "sunday_bus_after_19_pct": 74.2,
+   "sunday_bus_after_21_pct": 69.0,
+   "sunday_bus_after_23_pct": 11.6,
+   "any_mode_after_21_pct": 77.8,
+   "any_mode_after_23_pct": 37.2,
+   "stops_none_after_21_pct": 21.2,
+   "stops_none_after_22_pct": 61.8,
+   "last_bus_9_to_10_pm": 1233765,
+   "last_bus_9_to_10_pm_pct": 25.1,
+   "sunday_stops": 17256,
+   "sunday_routes": 441,
+   "suburbs": 571,
+   "quiet_first": [
+    {
+     "suburb": "Capel Sound",
+     "residents": 5191.0,
+     "stop_400m_pct": 84.4,
+     "wd_bus_after_21_pct": 29.5,
+     "wd_quiet": "16:37"
+    },
+    {
+     "suburb": "Upwey",
+     "residents": 6840.0,
+     "stop_400m_pct": 81.0,
+     "wd_bus_after_21_pct": 18.1,
+     "wd_quiet": "17:30"
+    },
+    {
+     "suburb": "Canterbury",
+     "residents": 7934.0,
+     "stop_400m_pct": 83.8,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "18:43"
+    },
+    {
+     "suburb": "Patterson Lakes",
+     "residents": 7801.0,
+     "stop_400m_pct": 86.2,
+     "wd_bus_after_21_pct": 48.2,
+     "wd_quiet": "18:43"
+    },
+    {
+     "suburb": "Rowville",
+     "residents": 33656.0,
+     "stop_400m_pct": 83.8,
+     "wd_bus_after_21_pct": 43.7,
+     "wd_quiet": "18:49"
+    }
+   ],
+   "quiet_last": [
+    {
+     "suburb": "Burnside",
+     "residents": 5796.0,
+     "wd_quiet": "00:45"
+    },
+    {
+     "suburb": "Beaumaris",
+     "residents": 13952.0,
+     "wd_quiet": "00:42"
+    },
+    {
+     "suburb": "Doncaster",
+     "residents": 24951.0,
+     "wd_quiet": "00:38"
+    },
+    {
+     "suburb": "Kew East",
+     "residents": 6623.0,
+     "wd_quiet": "00:38"
+    },
+    {
+     "suburb": "Black Rock",
+     "residents": 6458.0,
+     "wd_quiet": "00:36"
+    }
+   ]
+  },
+  "Sydney": {
+   "residents": 5230011,
+   "mesh_blocks": 49319,
+   "feed": "feed",
+   "stops": 26159,
+   "routes": 702,
+   "school_routes_left_out": 2347,
+   "no_stop_pct": 7.0,
+   "bus_after_19_pct": 87.5,
+   "bus_after_20_pct": 84.7,
+   "bus_after_21_pct": 80.7,
+   "bus_after_22_pct": 71.9,
+   "bus_after_23_pct": 61.7,
+   "bus_after_24_pct": 42.3,
+   "sunday_bus_after_19_pct": 77.1,
+   "sunday_bus_after_21_pct": 66.9,
+   "sunday_bus_after_23_pct": 45.1,
+   "any_mode_after_21_pct": 81.5,
+   "any_mode_after_23_pct": 63.1,
+   "stops_none_after_21_pct": 38.7,
+   "stops_none_after_22_pct": 51.9,
+   "last_bus_9_to_10_pm": 459876,
+   "last_bus_9_to_10_pm_pct": 8.8,
+   "sunday_stops": 20885,
+   "sunday_routes": 489,
+   "suburbs": 905,
+   "quiet_first": [
+    {
+     "suburb": "Springwood",
+     "residents": 8424.0,
+     "stop_400m_pct": 85.9,
+     "wd_bus_after_21_pct": 12.3,
+     "wd_quiet": "17:27"
+    },
+    {
+     "suburb": "Heathcote",
+     "residents": 6142.0,
+     "stop_400m_pct": 100.0,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "17:45"
+    },
+    {
+     "suburb": "Wentworth Falls",
+     "residents": 6342.0,
+     "stop_400m_pct": 80.0,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "17:55"
+    },
+    {
+     "suburb": "Oatley",
+     "residents": 10574.0,
+     "stop_400m_pct": 94.8,
+     "wd_bus_after_21_pct": 4.1,
+     "wd_quiet": "18:07"
+    },
+    {
+     "suburb": "Katoomba",
+     "residents": 8229.0,
+     "stop_400m_pct": 95.2,
+     "wd_bus_after_21_pct": 45.3,
+     "wd_quiet": "18:43"
+    }
+   ],
+   "quiet_last": [
+    {
+     "suburb": "Bondi",
+     "residents": 10381.0,
+     "wd_quiet": "02:59"
+    },
+    {
+     "suburb": "Fairlight",
+     "residents": 6358.0,
+     "wd_quiet": "02:59"
+    },
+    {
+     "suburb": "Sydney",
+     "residents": 16657.0,
+     "wd_quiet": "02:58"
+    },
+    {
+     "suburb": "Newtown",
+     "residents": 14720.0,
+     "wd_quiet": "02:57"
+    },
+    {
+     "suburb": "Vaucluse",
+     "residents": 9402.0,
+     "wd_quiet": "02:57"
+    }
+   ]
+  },
+  "Brisbane": {
+   "residents": 2526210,
+   "mesh_blocks": 24235,
+   "feed": "Department of Transport and Main Roads - Translink Division",
+   "stops": 9544,
+   "routes": 431,
+   "school_routes_left_out": 0,
+   "no_stop_pct": 23.6,
+   "bus_after_19_pct": 62.3,
+   "bus_after_20_pct": 51.4,
+   "bus_after_21_pct": 43.1,
+   "bus_after_22_pct": 36.1,
+   "bus_after_23_pct": 31.6,
+   "bus_after_24_pct": 12.8,
+   "sunday_bus_after_19_pct": 34.7,
+   "sunday_bus_after_21_pct": 26.5,
+   "sunday_bus_after_23_pct": 15.1,
+   "any_mode_after_21_pct": 44.8,
+   "any_mode_after_23_pct": 33.8,
+   "stops_none_after_21_pct": 64.5,
+   "stops_none_after_22_pct": 71.5,
+   "last_bus_9_to_10_pm": 177022,
+   "last_bus_9_to_10_pm_pct": 7.0,
+   "sunday_stops": 7124,
+   "sunday_routes": 288,
+   "suburbs": 639,
+   "quiet_first": [
+    {
+     "suburb": "Corinda",
+     "residents": 5539.0,
+     "stop_400m_pct": 83.7,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "17:04"
+    },
+    {
+     "suburb": "Keperra",
+     "residents": 7010.0,
+     "stop_400m_pct": 98.0,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "17:55"
+    },
+    {
+     "suburb": "Kingston",
+     "residents": 10514.0,
+     "stop_400m_pct": 91.1,
+     "wd_bus_after_21_pct": 10.0,
+     "wd_quiet": "18:24"
+    },
+    {
+     "suburb": "Bald Hills",
+     "residents": 6992.0,
+     "stop_400m_pct": 81.0,
+     "wd_bus_after_21_pct": 26.7,
+     "wd_quiet": "18:31"
+    },
+    {
+     "suburb": "Rochedale South",
+     "residents": 15232.0,
+     "stop_400m_pct": 93.7,
+     "wd_bus_after_21_pct": 0.0,
+     "wd_quiet": "18:32"
+    }
+   ],
+   "quiet_last": [
+    {
+     "suburb": "Acacia Ridge",
+     "residents": 7506.0,
+     "wd_quiet": "00:25"
+    },
+    {
+     "suburb": "South Brisbane",
+     "residents": 14287.0,
+     "wd_quiet": "00:23"
+    },
+    {
+     "suburb": "Salisbury",
+     "residents": 7016.0,
+     "wd_quiet": "00:20"
+    },
+    {
+     "suburb": "Algester",
+     "residents": 9062.0,
+     "wd_quiet": "00:14"
+    },
+    {
+     "suburb": "Moorooka",
+     "residents": 10920.0,
+     "wd_quiet": "00:14"
+    }
+   ]
+  }
+ },
+ "board": [
+  "1.23 million Melburnians: the last bus within 400 m leaves between 9 and 10 pm",
+  "81% of Sydney residents still have a bus after 9 pm; Brisbane 43%",
+  "62% of Adelaide residents still have a bus after 11 pm; Melbourne 26%"
+ ],
+ "story": "From each operator’s GTFS timetable for Wednesday 25 November 2026 (the timetable, not what ran). Buses only, school and on-demand services left out. A stop counts when it is within 400 m of a mesh block’s middle in a straight line. Residents: ABS Census 2021."
+}

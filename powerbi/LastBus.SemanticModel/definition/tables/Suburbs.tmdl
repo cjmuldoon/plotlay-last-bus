@@ -1,0 +1,173 @@
+table Suburbs
+	lineageTag: 78368984-6814-5f0f-0156-58f4d5dfe55e
+
+	/// Share of the suburb's residents with a bus still to leave a stop within 400 m after 9 pm on the weekday; blank (grey on the map) where the suburb has fewer than 200 residents a km²
+	measure 'After 9 pm' = IF ( MIN ( Suburbs[per_km2] ) >= 200, AVERAGE ( Suburbs[wd_bus_after_21_pct] ) )
+		formatString: 0.0
+		lineageTag: fd53b66a-cdc6-6f69-fdd0-40c094fc0559
+
+	/// Residents (ABS Census 2021)
+	measure 'Suburb residents' = SUM ( Suburbs[residents] )
+		formatString: #,0
+		lineageTag: 0295442b-34e0-3280-1ca4-35b5eabd6636
+
+	column city
+		dataType: string
+		lineageTag: 7fed2bf8-56b2-017b-ba68-7883b6ff5895
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column sal_code
+		dataType: string
+		lineageTag: d86c4935-72bf-1f3e-8ab1-eb0221da2003
+		summarizeBy: none
+		sourceColumn: sal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column suburb
+		dataType: string
+		lineageTag: e194a36e-db40-ebfe-5668-6e59f7a01779
+		summarizeBy: none
+		sourceColumn: suburb
+
+		annotation SummarizationSetBy = Automatic
+
+	column residents
+		dataType: int64
+		formatString: #,0
+		lineageTag: e1bb3275-9f2f-ffbe-8539-a37b3ccc1e23
+		summarizeBy: none
+		sourceColumn: residents
+
+		annotation SummarizationSetBy = Automatic
+
+	column per_km2
+		dataType: double
+		formatString: #,0
+		lineageTag: 47124a5e-dc40-4767-a57d-801f2e5abd1d
+		summarizeBy: none
+		sourceColumn: per_km2
+
+		annotation SummarizationSetBy = Automatic
+
+	column stop_400m_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: d1952b8c-2fe8-0e91-7526-1e95f3521d2d
+		summarizeBy: none
+		sourceColumn: stop_400m_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_19_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: b2c0fe67-25c4-010c-a434-1a5535c429f1
+		summarizeBy: none
+		sourceColumn: wd_bus_after_19_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_20_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 9a0d311f-9471-a229-bb93-21e37f9aec58
+		summarizeBy: none
+		sourceColumn: wd_bus_after_20_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_21_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: c4a8a79b-b2e5-e9c2-499a-dbc57680e0d7
+		summarizeBy: none
+		sourceColumn: wd_bus_after_21_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_22_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 8c97f5a6-4ee8-6ecc-7d29-52466f8e55ea
+		summarizeBy: none
+		sourceColumn: wd_bus_after_22_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_23_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 431b2383-6e54-2691-7a97-a8a20dc7be14
+		summarizeBy: none
+		sourceColumn: wd_bus_after_23_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_bus_after_24_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 3778ea8a-a073-7a9b-9275-59a348dcaba4
+		summarizeBy: none
+		sourceColumn: wd_bus_after_24_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column su_bus_after_21_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: b61117e6-6bba-c24a-c2b2-a166c893c6da
+		summarizeBy: none
+		sourceColumn: su_bus_after_21_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column su_bus_after_22_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 2b91d74d-2cf0-26dc-b904-bc2e74dabaef
+		summarizeBy: none
+		sourceColumn: su_bus_after_22_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column su_bus_after_23_pct
+		dataType: double
+		formatString: 0.0
+		lineageTag: 801a05cc-9d94-fda3-a40c-7a1d369edc5b
+		summarizeBy: none
+		sourceColumn: su_bus_after_23_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column wd_quiet
+		dataType: string
+		lineageTag: d587fbf3-321d-1787-82e8-d763278a5672
+		summarizeBy: none
+		sourceColumn: wd_quiet
+
+		annotation SummarizationSetBy = Automatic
+
+	column su_quiet
+		dataType: string
+		lineageTag: 18c934e7-e847-3a1d-5dd4-0309ab6506f8
+		summarizeBy: none
+		sourceColumn: su_quiet
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Suburbs = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(GetFile("suburbs.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Kept = Table.SelectColumns(Promoted, {"city", "sal_code", "suburb", "residents", "per_km2", "stop_400m_pct", "wd_bus_after_19_pct", "wd_bus_after_20_pct", "wd_bus_after_21_pct", "wd_bus_after_22_pct", "wd_bus_after_23_pct", "wd_bus_after_24_pct", "su_bus_after_21_pct", "su_bus_after_22_pct", "su_bus_after_23_pct", "wd_quiet", "su_quiet"}),
+				    Typed = Table.TransformColumnTypes(Kept, {{"city", type text}, {"sal_code", type text}, {"suburb", type text}, {"residents", Int64.Type}, {"per_km2", type number}, {"stop_400m_pct", type number}, {"wd_bus_after_19_pct", type number}, {"wd_bus_after_20_pct", type number}, {"wd_bus_after_21_pct", type number}, {"wd_bus_after_22_pct", type number}, {"wd_bus_after_23_pct", type number}, {"wd_bus_after_24_pct", type number}, {"su_bus_after_21_pct", type number}, {"su_bus_after_22_pct", type number}, {"su_bus_after_23_pct", type number}, {"wd_quiet", type text}, {"su_quiet", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

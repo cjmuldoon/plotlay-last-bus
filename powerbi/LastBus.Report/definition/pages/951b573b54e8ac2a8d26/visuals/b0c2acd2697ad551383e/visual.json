@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "b0c2acd2697ad551383e",
+  "position": {
+    "x": 40,
+    "y": 1020,
+    "z": 99,
+    "height": 58,
+    "width": 1840,
+    "tabOrder": 99
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Timetables: Adelaide Metro (Department for Infrastructure and Transport, South Australia), Transport Victoria, Transport for NSW and Translink (Department of Transport and Main Roads, Queensland) GTFS feeds for Wednesday 25 and Sunday 29 November 2026 (CC BY 4.0). Residents, mesh blocks and suburbs: ABS Census 2021 and ASGS Edition 3 (CC BY 4.0). The timetable, not what ran. Buses only; school and on-demand services left out. A stop counts within 400 m in a straight line. Made with Plotlay (getplotlay.com).",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

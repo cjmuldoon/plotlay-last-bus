@@ -1,0 +1,172 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "0b126f9b3d011a7b6f93",
+  "position": {
+    "x": 50,
+    "y": 176,
+    "z": 2,
+    "height": 213,
+    "width": 320.125,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#2c115f",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "none",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#721f81",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "up to 20%",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#b73779",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "20 to 40%",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#f1605d",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "40 to 60%",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#feb078",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "60 to 80%",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#fcfdbf",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "over 80%",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "■ ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#cfcac0",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "fewer than 200 residents a km²",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#1f2a37",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "annotations": [
+    {
+      "name": "plotlay.legendFor",
+      "value": "84a5de69ce5f1737af68"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "86949bea3a489c12f90e",
+  "position": {
+    "x": 40,
+    "y": 690,
+    "z": 1,
+    "height": 320,
+    "width": 1840,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "city"
+                }
+              },
+              "queryRef": "Suburbs.city",
+              "nativeQueryRef": "city",
+              "displayName": "City"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "suburb"
+                }
+              },
+              "queryRef": "Suburbs.suburb",
+              "nativeQueryRef": "suburb",
+              "displayName": "Suburb"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "Suburb residents"
+                }
+              },
+              "queryRef": "Suburbs.Suburb residents",
+              "nativeQueryRef": "Suburb residents",
+              "displayName": "Residents"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "stop_400m_pct"
+                }
+              },
+              "queryRef": "Suburbs.stop_400m_pct",
+              "nativeQueryRef": "stop_400m_pct",
+              "displayName": "Stop within 400 m (%)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "wd_bus_after_21_pct"
+                }
+              },
+              "queryRef": "Suburbs.wd_bus_after_21_pct",
+              "nativeQueryRef": "wd_bus_after_21_pct",
+              "displayName": "Weekday, after 9 pm (%)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "wd_bus_after_22_pct"
+                }
+              },
+              "queryRef": "Suburbs.wd_bus_after_22_pct",
+              "nativeQueryRef": "wd_bus_after_22_pct",
+              "displayName": "Weekday, after 10 pm (%)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "wd_bus_after_23_pct"
+                }
+              },
+              "queryRef": "Suburbs.wd_bus_after_23_pct",
+              "nativeQueryRef": "wd_bus_after_23_pct",
+              "displayName": "Weekday, after 11 pm (%)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "wd_quiet"
+                }
+              },
+              "queryRef": "Suburbs.wd_quiet",
+              "nativeQueryRef": "wd_quiet",
+              "displayName": "Weekday: half gone by"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Suburbs"
+                    }
+                  },
+                  "Property": "su_bus_after_21_pct"
+                }
+              },
+              "queryRef": "Suburbs.su_bus_after_21_pct",
+              "nativeQueryRef": "su_bus_after_21_pct",
+              "displayName": "Sunday, after 9 pm (%)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Suburbs"
+                  }
+                },
+                "Property": "Suburb residents"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Suburbs by residents'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.city"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "297.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.suburb"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "106.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.Suburb residents"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.stop_400m_pct"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.wd_bus_after_21_pct"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.wd_bus_after_22_pct"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.wd_bus_after_23_pct"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.wd_quiet"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Suburbs.su_bus_after_21_pct"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

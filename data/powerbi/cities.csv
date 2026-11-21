@@ -1,0 +1,5 @@
+city,residents,mesh_blocks,feed,stops,routes,school_routes_left_out,no_stop_pct,bus_after_19_pct,bus_after_20_pct,bus_after_21_pct,bus_after_22_pct,bus_after_23_pct,bus_after_24_pct,sunday_bus_after_19_pct,sunday_bus_after_21_pct,sunday_bus_after_23_pct,any_mode_after_21_pct,any_mode_after_23_pct,stops_none_after_21_pct,stops_none_after_22_pct,last_bus_9_to_10_pm,last_bus_9_to_10_pm_pct,sunday_stops,sunday_routes,suburbs
+Adelaide,1386882,15797,Adelaide Metro,7181,348,170,13.9,80.0,74.6,73.6,71.2,62.2,32.6,72.7,71.0,62.1,75.8,65.1,30.8,35.9,32476,2.3,5934,187,494
+Melbourne,4917585,49586,Transport Victoria,19144,575,0,18.9,78.2,75.0,73.0,47.9,26.4,18.4,74.2,69.0,11.6,77.8,37.2,21.2,61.8,1233765,25.1,17256,441,571
+Sydney,5230011,49319,feed,26159,702,2347,7.0,87.5,84.7,80.7,71.9,61.7,42.3,77.1,66.9,45.1,81.5,63.1,38.7,51.9,459876,8.8,20885,489,905
+Brisbane,2526210,24235,Department of Transport and Main Roads - Translink Division,9544,431,0,23.6,62.3,51.4,43.1,36.1,31.6,12.8,34.7,26.5,15.1,44.8,33.8,64.5,71.5,177022,7.0,7124,288,639
